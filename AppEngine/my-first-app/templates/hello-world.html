@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+    <style>
+    #name {
+      color: {{ favorite_color }}
+    }
+    </style>
+  <h1> {{ greeting }} <span id = "name"> {{ name }} </span></h1> <!-- Placeholder for render data -->
+  <h1> My handler worked with templates! </h1>
+  <form>
+    <input name = "picture" type = "radio" value = "Normal" checked > Normal Picture </br>
+    <input name = "picture" type = "radio" value = "half" > Half </br>
+  </form>
+  <img src = "resources/milk.jpg" />
+  <form> <!-- action:"/foobar" changes directory     -->
+    What is your name? <input name = "myname" type="text">
+    What is your favorite color? <input name = "favorite_color" type = "text">
+    What is your favorite vegetable? <input name = "favorite_veg" type = "text">
+    How many times would you like to chant? <input name = "chants" type = "text">
+    <input type = "submit" />
+  </form>
+</br>
+{% if favorite_vegetable == ("rutabaga" or "rutabagas") %}
+<h2> Rutabagas are dumb </h2>
+<img src = 'resources/instagram.jpg' />
+{% else %}
+Your favorite vegetable is a {{favorite_vegetable}}
+{% endif %}
+{% for i in range(chants) %}
+<h4> Steve! </h4>
+{% endfor %}
+</body>
+</html>

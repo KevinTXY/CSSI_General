@@ -1,0 +1,22 @@
+application: my-first-app  #Markup language to specify configuration
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico  #url for file
+  static_files: favicon.ico #serves this file
+  upload: favicon\.ico
+
+- url: /resources #directory for files being served
+  static_dir: static_folder #folder holding those files
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest

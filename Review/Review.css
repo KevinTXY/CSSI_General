@@ -1,0 +1,46 @@
+body {
+  background-color: #fff;
+}
+h1#ann1 {
+  text-align: center;
+  color: grey;
+  font-style: oblique;
+  font-size: 40px;
+}
+h1#ann2 {
+  text-align: center;
+  color: #605353;
+  font-style: oblique;
+  font-size: 30px;
+}
+div#cosmo {
+  width: 27%;
+  float: left;
+}
+span.button {
+  float: right;
+  text-align: center;
+  font: 25px;
+  border: 8px;
+  border-color: black;
+  border-style: solid;
+  background-color: grey;
+  margin-right: 600px;
+  margin-top: 100px;
+}
+h2#speech {
+  float: right;
+  text-align: center;
+  font: 70px;
+  margin-right: 270px;
+  font-style: italic;
+  color: green;
+}
+ul#links {
+  font-family: "Comic Sans MS";
+  margin-top: 500px;
+  margin-right: 50px;
+
+
+
+}

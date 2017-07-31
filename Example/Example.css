@@ -1,0 +1,29 @@
+span.highlighted {
+  color: red;
+  text-decoration: underline;
+}
+/* Done */
+.highlighted {
+  color: blue;
+}
+/* Done */
+h3.highlighted {
+  color: purple;
+}
+/* Done */
+#real_cool {
+  font-size: 35;
+}
+/* Done */
+div {
+  background-color: grey;
+}
+
+
+div ul {
+  background-color: purple;
+}
+
+div, ol {
+  background-color: orange;
+}
